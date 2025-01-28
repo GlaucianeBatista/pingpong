@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://1mm3j02ilcdl"]
+
+[ext_resource type="PackedScene" uid="uid://2h6t5tvxpmsn" path="res://raquete.tscn" id="1_1yq3j"]
+[ext_resource type="Texture2D" uid="uid://bf81dqupue0y5" path="res://imagens/incio.2.png" id="1_dcw17"]
+[ext_resource type="PackedScene" uid="uid://cjak3qefvij8q" path="res://bola.tscn" id="2_7imel"]
+
+[node name="principal" type="Node2D"]
+
+[node name="Incio_2" type="Sprite2D" parent="."]
+position = Vector2(577, 324.5)
+scale = Vector2(0.995656, 0.996909)
+texture = ExtResource("1_dcw17")
+
+[node name="bola" parent="." instance=ExtResource("2_7imel")]
+position = Vector2(562, 331)
+
+[node name="raquete" parent="." instance=ExtResource("1_1yq3j")]
+position = Vector2(572, 576)
+scale = Vector2(0.63, 0.846)
